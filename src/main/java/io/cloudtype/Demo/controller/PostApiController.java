@@ -19,12 +19,12 @@ public class PostApiController {
 
     @CrossOrigin(origins = "https://teamswr.store")
     @PostMapping("/user")
-    public UserRequest user(
+    public String user(
             @RequestBody UserRequest userRequest
     ){
         System.out.println(userRequest);
 
-        return userRequest;
+        return "123";
     }
 
 }
