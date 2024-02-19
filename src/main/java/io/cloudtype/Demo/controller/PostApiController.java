@@ -32,7 +32,7 @@ public class PostApiController {
         System.out.println(userRequest);
 
         // 클라이언트 측에서 서버로 POST 요청 보내기
-        String serverUrl = "http://your-server-domain/api/post"; // 서버의 도메인 주소 수정 필요
+        String serverUrl = "https://port-0-test2-17xco2nlst1tgoh.sel5.cloudtype.app/api/user"; // 서버의 도메인 주소 수정 필요
         WebClient webClient = webClientBuilder.baseUrl(serverUrl).build();
         webClient.post()
                 .uri(serverUrl)
